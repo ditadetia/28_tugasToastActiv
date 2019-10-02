@@ -24,8 +24,6 @@ public class count extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_count);
 
-        context =this;
-
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
         txtHello = (TextView) findViewById(R.id.halo);
@@ -35,6 +33,7 @@ public class count extends AppCompatActivity {
         txtHello.setText("Hallo " + name);
 
         context = this;
+        counter=28;
 
         countup = (Button)findViewById(R.id.countup);
         countdown = (Button)findViewById(R.id.countdown);
